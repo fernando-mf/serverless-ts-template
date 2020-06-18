@@ -2,7 +2,7 @@
   "name": "serverless-ts-template",
   "version": "1.0.0",
   "description": "Serverless TS template",
-  "author": "fernando-mf <fernando.1703@hotmail.com>",
+  "author": "@your-team-name",
   "license": "MIT",
   "private": true,
   "scripts": {
