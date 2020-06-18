@@ -23,8 +23,8 @@ module.exports = {
   module: {
     rules: [
       {
-        // Include ts, tsx, js, and jsx files.
-        test: /\.(ts|js)x?$/,
+        // Include ts and js files.
+        test: /\.(ts|js)?$/,
         exclude: /node_modules/,
         use: [
           {

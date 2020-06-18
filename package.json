@@ -6,12 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "compile": "tsc --noEmit",
     "deploy": "sls deploy"
   },
-  "dependencies": {
-    "axios": "^0.19.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",

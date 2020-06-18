@@ -12,13 +12,14 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "rootDir": "./src",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "exclude": ["./src/playground.js"],
   "ts-node": {
     "transpileOnly": true
   }
