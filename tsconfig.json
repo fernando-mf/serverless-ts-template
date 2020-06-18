@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "alwaysStrict": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "target": "es2017",
+    "outDir": ".build",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": ["es2017"],
+    "rootDir": "./src",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "exclude": ["./src/playground.js"],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

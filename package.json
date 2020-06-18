@@ -1,0 +1,40 @@
+{
+  "name": "serverless-ts-template",
+  "version": "1.0.0",
+  "description": "Serverless TS template",
+  "author": "fernando-mf <fernando.1703@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile": "tsc --noEmit",
+    "deploy": "sls deploy"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/aws-lambda": "^8.10.56",
+    "aws-lambda": "^1.0.6",
+    "aws-sdk": "^2.700.0",
+    "babel-loader": "^8.1.0",
+    "cache-loader": "^4.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.2",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "serverless": "^1.73.1",
+    "serverless-webpack": "^5.3.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

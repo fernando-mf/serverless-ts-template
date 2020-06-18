@@ -1,0 +1,28 @@
+service: service-name
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    packager: 'yarn'
+    excludeFiles: src/**/*.test.{js,ts} # You can provide a custom exclusion pattern
+    includeModules:
+      forceExclude:
+        - aws-sdk
+    keepOutputDirectory: true # Keep webpack output after running `sls deploy` or `sls package`
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ca-central-1
+
+functions:
+  hello:
+    handler: src/lambda/hello.handler
+    events:
+      - http:
+          method: get
+          path: hello
